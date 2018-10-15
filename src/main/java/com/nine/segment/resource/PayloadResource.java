@@ -18,9 +18,9 @@ import com.nine.segment.data.ResponsePayload;
 import com.nine.segment.service.PayloadService;
 
 /**
- * Root resource (exposed at "payload" path)
+ * Root resource (exposed at root path)
  */
-@Path("payload")
+@Path("")
 public class PayloadResource {
 
 	PayloadService payloadService = new PayloadService();
