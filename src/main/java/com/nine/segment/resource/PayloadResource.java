@@ -18,7 +18,7 @@ import com.nine.segment.data.ResponsePayload;
 import com.nine.segment.service.PayloadService;
 
 /**
- * Root resource (exposed at root path)
+ * Root resource (exposed at "payload" path)
  */
 @Path("")
 public class PayloadResource {
@@ -33,7 +33,7 @@ public class PayloadResource {
 	 */
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String getIt() {
+	public String healthCheck() {
 		return "Web Service Up and Running... Health check successful.";
 	}
 	
